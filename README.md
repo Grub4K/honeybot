@@ -20,7 +20,7 @@ Create a `config.json` in the programs working directory with the following form
 ```
 
 Currently the `delete` key only supports increments of 24h.
-To reload a running programs config, send it `SIGUSR1`.
+Any changes to the config file will be automatically watched for using a filesystem watcher.
 
 ### Docker Compose
 Use a compose file that uses the published image from the GitHub Container Registry:
